@@ -1,0 +1,470 @@
+/* General styles */
+body {
+    font-family: "Chakra Petch", serif;
+    background-color: #f5f0e1; 
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s ease;
+  }
+  
+  #user-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 40px;
+    background: #ffc13b; 
+    border-radius: 12px;
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Form styles */
+  #search {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+  
+  label {
+    font-size: 20px;
+    margin-bottom: 7px;
+    font-weight: bold;
+    color: #1e3d59; 
+    transition: color 0.3s ease;
+  }
+  
+  input[type="text"] {
+    padding: 15px;
+    font-size: 17px;
+    margin-bottom: 15px;
+    border: 2px solid #ff6e40; 
+    border-radius: 6px;
+    transition: all 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  input[type="text"]:focus {
+    border-color: #ff6e40; 
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(255, 110, 64, 0.2);
+  }
+  
+  input[type="submit"] {
+    padding: 15px;
+    background-color: #ff6e40; 
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #1e3d59; 
+    transform: scale(1.05);
+  }
+  
+  /* User list styles */
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  span {
+    padding: 5px;
+    color: #1e3d59;
+    font-size: 17px;
+  }
+  
+  li {
+    margin-bottom: 20px;
+    padding: 15px;
+    background: #ffffff83; 
+    border: 1px solid #1e3d59; 
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+  }
+  
+  li:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  }
+  
+  .name {
+    font-weight: bold;
+    font-size: 1.3em;
+    color: #1e3d59;
+  }
+  
+  .email {
+    color: black;
+  }
+  
+  .add-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.3em;
+    text-decoration: none;
+    color: #f5f0e1;
+    margin: 10px;
+    padding: 12px 24px;
+    background-color: #e9a267;
+    border-radius: 8px;
+    border: 2px solid #e9a267;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease, transform 0.2s ease;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .add-button:hover {
+    background-color: #ff6e40;
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border-color: #ff6e40;
+  }
+  
+  .add-button:active {
+    transform: translateY(1px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .add-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(255, 110, 64, 0.3);
+  }
+  
+  .cart-icon {
+    width: 25px;
+    height: 25px;
+    padding: 5px;
+  }
+  
+  /* Purchased items styles */
+  .purchased-items {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    overflow-x: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .purchased-items:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  }
+  
+  .item-name {
+    font-weight: bold;
+    font-size: 20px;
+  }
+  
+  .name-and-trashcan {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .quantity,
+  .price,
+  .purchase-date {
+    margin-left: 15px;
+    color: hsl(228, 100%, 1%); 
+    font-family: "Chakra Petch", serif;
+    font-weight: 600;
+    font-style: italic;
+  
+  }
+  
+  /* Trash can icon styles */
+  .trashcan {
+    cursor: pointer;
+    margin-left: auto;
+    color: #1e3d59; 
+    transition: color 0.3s ease, transform 0.3s ease;
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+  }
+  
+  .trashcan:hover {
+    color: #080504;
+    transform: scale(1.2);
+  }
+  
+  /* Navbar styles */
+  .navbar {
+    background-color: #1e3d59;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .navbar:hover {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  }
+  
+  .navbar h1 {
+    margin-bottom: 1rem;
+    font-family: "Chakra Petch", serif;
+    font-size: 2em;
+    font-weight: 700;
+    font-style: normal;
+    color: #ffc13b;
+  }
+  
+  .links {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    transition: color 0.3s ease, transform 0.2s ease;
+    font-weight: bold;
+    font-size: 1.5em;
+  }
+  
+  .links a:hover {
+    color: #e9a267;
+    transform: translateY(-3px);
+  }
+  
+  @media (max-width: 600px) {
+    .links {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .links a {
+      margin-bottom: 15px;
+    }
+  }
+  
+  
+  /* create user */
+  .create-user {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 40px;
+    background: #ffc13b;
+    border-radius: 12px;
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    font-size: 20px;
+    margin-bottom: 7px;
+    font-weight: bold;
+    color: #1e3d59;
+    transition: color 0.3s ease;
+  }
+  
+  input[type="text"], input[type="email"] {
+    padding: 15px;
+    font-size: 17px;
+    margin-bottom: 15px;
+    border: 2px solid #ff6e40;
+    border-radius: 6px;
+    transition: all 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  input[type="text"]:focus, input[type="email"]:focus {
+    border-color: #ff6e40;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(255, 110, 64, 0.2);
+  }
+  
+  button {
+    padding: 15px;
+    background-color: #ff6e40;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  button:hover {
+    background-color: #1e3d59;
+    transform: scale(1.05);
+  }
+  
+  .error-message {
+    color: red;
+  }
+  
+  /* create user */
+  .create-item {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 40px;
+    background: #ffc13b;
+    border-radius: 12px;
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Form styles */
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    font-size: 20px;
+    margin-bottom: 7px;
+    font-weight: bold;
+    color: #1e3d59;
+    transition: color 0.3s ease;
+  }
+  
+  input[type="text"],
+  input[type="number"],
+  select {
+    padding: 15px;
+    font-size: 17px;
+    margin-bottom: 15px;
+    border: 2px solid #ff6e40;
+    border-radius: 6px;
+    transition: all 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  input[type="text"]:focus,
+  input[type="number"]:focus,
+  select:focus {
+    border-color: #ff6e40;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(255, 110, 64, 0.2);
+  }
+  
+  button[type="submit"] {
+    padding: 15px;
+    background-color: #ff6e40;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #1e3d59;
+    transform: scale(1.05);
+  }
+  
+  .error-message {
+    color: red;
+    font-weight: bold;
+  }
+  
+  .success-message {
+    color: green;
+    font-weight: bold;
+  }
+  
+  /* Purchased items styles */
+  .users-box {
+    background-color:#dfd2c8bb;
+    padding: 15px;
+    margin: 20px;
+    border-radius: 10px;
+  }
+  
+  .purchased-items {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    overflow-x: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .purchased-items:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  }
+  
+  li {
+    margin-bottom: 20px;
+    padding: 15px;
+    background: #ffffff83;
+    border: 1px solid #1e3d59;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+  }
+  
+  li:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  }
+  
+  .name-and-trashcan {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .item-name {
+    font-weight: bold;
+    font-size: 20px;
+    color: #1e3d59;
+  }
+  
+  .quantity,
+  .price,
+  .purchase-date {
+    margin-left: 15px;
+    color: hsl(228, 100%, 1%);
+    font-family: "Chakra Petch", serif;
+    font-weight: 600;
+    font-style: italic;
+  }
+  
+  .trashcan {
+    cursor: pointer;
+    margin-left: auto;
+    color: #1e3d59;
+    transition: color 0.3s ease, transform 0.3s ease;
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+  }
+  
+  .trashcan:hover {
+    color: #ff6e40;
+    transform: scale(1.2);
+  }
+  
+  h1,
+  h2,
+  h3 {
+    font-family: "Chakra Petch", serif;
+    color: #1e3d59; 
+  }
+  
+  h3 {
+    font-size: 30px;
+  }
+  
+  .success-msg, .error-msg {
+    font-size: 20px;
+    padding-bottom: 5px;
+  }
