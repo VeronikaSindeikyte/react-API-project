@@ -1,8 +1,8 @@
-# React + Vite
+# Find purchase history from DB by name and surname:
+![Find purchase history](https://github.com/user-attachments/assets/ea54a09e-eb14-4574-9b91-eb34e24350b0)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Create new Buyer in the DB:
+![Create Buyer](https://github.com/user-attachments/assets/c9120859-cac1-4889-9b37-582ddb48d223)
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# Add new product to the the purchased Item list in DB by selecting the user:
+![Add new product](https://github.com/user-attachments/assets/5775230b-0cb0-45de-b0eb-1aaaaa67666f)
